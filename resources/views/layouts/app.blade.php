@@ -13,20 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v=1.5">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v=1.7">
     @stack('styles')
 </head>
 <body class="@yield('body_class', 'has-hero')">
-
-    {{-- Preloader --}}
-    <div class="preloader" id="preloader">
-        <div class="preloader__inner">
-            <img src="{{ asset('assets/images/logo-icon.png') }}" alt="" class="preloader__logo">
-            <div class="preloader__bar"><span></span></div>
-        </div>
-        <div class="preloader__panel preloader__panel--1"></div>
-        <div class="preloader__panel preloader__panel--2"></div>
-    </div>
 
     @include('partials.header')
 
@@ -57,7 +47,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script src="{{ asset('assets/js/main.js') }}?v=1.5"></script>
+    <script src="{{ asset('assets/js/main.js') }}?v=1.7"></script>
     @stack('scripts')
 </body>
 </html>

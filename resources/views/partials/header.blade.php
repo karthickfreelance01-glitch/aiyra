@@ -58,11 +58,17 @@
     <div class="menu-overlay__inner container">
         <ul class="menu-overlay__nav">
             @foreach($nav as $i => $item)
-                <li><a href="{{ route($item['route']) }}"><small>0{{ $i + 1 }}</small>{{ $item['label'] }}</a></li>
+                <li><a href="{{ route($item['route']) }}" class="{{ request()->routeIs($item['route'] . '*') ? 'active' : '' }}"><small>0{{ $i + 1 }}</small>{{ $item['label'] }}</a></li>
             @endforeach
         </ul>
+        <div class="menu-overlay__actions">
+            <a href="tel:{{ preg_replace('/\s+/', '', $site['phone'] ?? '') }}" class="header__call">
+                <span class="header__call-icon"><i class="bi bi-telephone-fill"></i></span>
+                <span class="header__call-text"><small>Call Us Now</small>{{ $site['phone'] ?? '' }}</span>
+            </a>
+            <button class="btn btn--primary btn--sm" data-open-enquiry><span>Get a Quote</span><i class="bi bi-arrow-up-right"></i></button>
+        </div>
         <div class="menu-overlay__info">
-            <p><i class="bi bi-telephone"></i> {{ $site['phone'] ?? '' }}</p>
             <p><i class="bi bi-envelope"></i> {{ $site['email'] ?? '' }}</p>
             <p><i class="bi bi-geo-alt"></i> {{ $site['address'] ?? '' }}</p>
         </div>

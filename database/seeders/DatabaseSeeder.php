@@ -51,7 +51,7 @@ class DatabaseSeeder extends Seeder
             'home_about_text' => 'At Aiyra Constructions we turn your ideas into lasting structures. From the first sketch to the final coat of paint, our engineers, architects and site teams work with complete transparency so you always know where your project stands.',
             'home_about_points' => ['Transparent pricing & BOQ', 'Premium quality materials', 'Experienced engineers on site', 'On-time project delivery'],
             'home_about_image' => $u . 'photo-1504307651254-35680f356dfd?w=1000&q=80',
-            'home_about_image2' => $u . 'photo-1590644365607-1c5a0b5b6b39?w=800&q=80',
+            'home_about_image2' => $u . 'photo-1541976590-713941681591?w=800&q=80',
             'experience_years' => '10',
             'stats' => [
                 ['number' => '150', 'suffix' => '+', 'label' => 'Projects Completed'],

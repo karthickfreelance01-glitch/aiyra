@@ -71,7 +71,7 @@
                 <img src="{{ img_url($site['home_about_image'] ?? '') }}" alt="About Aiyra Constructions" loading="lazy">
             </div>
             <div class="img-reveal about-home__img2" data-parallax="10">
-                <img src="{{ img_url($site['home_about_image2'] ?? '') }}" alt="" loading="lazy">
+                <img src="{{ img_url($site['home_about_image2'] ?? '', 'https://images.unsplash.com/photo-1541976590-713941681591?w=800&q=80') }}" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541976590-713941681591?w=800&q=80'">
             </div>
             <div class="exp-badge">
                 <svg viewBox="0 0 200 200" class="exp-badge__ring">
@@ -178,7 +178,7 @@
 <section class="section why">
     <div class="container why__grid">
         <div class="why__media">
-            <div class="img-reveal why__img"><img src="{{ img_url($site['why_image'] ?? '') }}" alt="Why choose Aiyra" loading="lazy" data-parallax-img></div>
+            <div class="img-reveal why__img"><img src="{{ img_url($site['why_image'] ?? '', 'https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=1000&q=80') }}" alt="Why choose Aiyra" loading="lazy" data-parallax-img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=1000&q=80'"></div>
             <div class="why__float glass">
                 <i class="bi bi-award"></i>
                 <div><strong>Quality Assured</strong><span>Every stage inspected</span></div>
